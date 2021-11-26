@@ -1,0 +1,9 @@
+.edit_Links {
+  font-size: 13px;
+}
+
+.edit_Links:hover {
+  font-size: 13px;
+  cursor: pointer;
+  color: rgb(107, 60, 35);
+}

@@ -1,0 +1,13 @@
+.layout {
+ margin-bottom: 10px;
+}
+.Pagiantion_upper_border{
+  padding: 5px 10px;
+  border: 0.5px solid lightgray !important;
+  border-radius: 6px; 
+}
+.ProductsTopHeading{
+  color: #000;
+  font-size: 15px !important;
+  font-weight: 600;
+}

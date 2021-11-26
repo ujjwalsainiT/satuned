@@ -1,0 +1,11 @@
+.blogBorder {
+  border: 1px solid black;
+}
+.Blog_heading {
+  font-size: 25px;
+  font-weight: 600;
+}
+.cursor_color:hover {
+  cursor: pointer;
+  color: rgb(107, 60, 35);
+}
