@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Footer.module.css";
-import { leftFooterData, rightFooterData } from "./../Data/FooterData";
+import { rightFooterData } from "./../Data/FooterData";
 import LeftFooterCard from "./LeftFooterCard";
 import RightFooterCard from "./RightFooterCard";
 

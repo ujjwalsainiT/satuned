@@ -17,7 +17,7 @@ function ModifyAddress() {
     const history = useHistory();
     const classes = useStyles();
 
-    const [AddressArr, setAddressArr] = useState([
+    const [AddressArr] = useState([
         { address: "abcd" },
         { address: "fdgdfgd" }
     ])

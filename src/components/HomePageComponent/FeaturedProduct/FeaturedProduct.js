@@ -3,7 +3,7 @@ import style from "./featured-product.module.css";
 import { MdShoppingCart } from "react-icons/md";
 // import { FeaturedProducts } from "../../Data/FearuredProductData";
 import ShowReview from "./../../commonComponent/ShowReview/ShowReview";
-import { productPageProductData } from "./../../Data/ProductPageProductsData";
+//import { productPageProductData } from "./../../Data/ProductPageProductsData";
 import { CardContext } from "./../../../App";
 import { totalQuantity } from "../../../Utilis/GetTotalQuantity";
 // import { animated } from "react-spring";

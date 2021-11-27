@@ -17,7 +17,7 @@ function OrderHistory() {
     const history = useHistory();
     const classes = useStyles();
 
-    const [OrderHistoryArr, setOrderHistoryArr] = useState([])
+    const [OrderHistoryArr] = useState([])
 
     // for pagination hadler 
     const [rowsPerPage, setRowsPerPage] = React.useState(5);

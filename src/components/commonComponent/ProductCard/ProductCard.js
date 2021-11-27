@@ -1,11 +1,10 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import style from "./ProductCard.module.css";
 import { MdShoppingCart } from "react-icons/md";
 // import ShowReview from "./../ShowReview/ShowReview";
 import { totalQuantity } from "../../../Utilis/GetTotalQuantity";
 import { CardContext } from "./../../../App";
 // const btnList = ["ORIGINAL", "Chinese", "Used"];
-import axios from "axios";
 
 const ProductCard = ({ product, productPage, dontShowDes }) => {
   const [hovered, sethovered] = useState(false);

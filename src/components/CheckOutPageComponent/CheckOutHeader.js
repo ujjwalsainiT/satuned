@@ -1,12 +1,12 @@
 import React from "react";
 import { Breadcrumb, FloatingLabel, Form } from "react-bootstrap";
 import style from "./CheckOutPageComponent.module.css";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CheckOutHeader = () => {
   return (
     <div className="checkout_header container">
-      <p className={`${style.logo} d-none d-lg-block`} >LAMBORGHINI</p>
+      <p className={`${style.logo} d-none d-lg-block`}>LAMBORGHINI</p>
       <div className={style.my_breadcrumb}>
         <Breadcrumb className="align-items-center">
           <Breadcrumb.Item
@@ -31,7 +31,9 @@ const CheckOutHeader = () => {
           <p className={`font-roboto fw-200 fs-19 mb-0`}>Contact information</p>
           <p className="font-sans fs-14">
             Already have an account?{" "}
-            <Link to="/account/login"><span className="text-sky cursor-ponter mb-0" > Log in</span></Link>
+            <Link to="/account/login">
+              <span className="text-sky cursor-ponter mb-0"> Log in</span>
+            </Link>
           </p>
         </div>
         <form>

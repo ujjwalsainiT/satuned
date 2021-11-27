@@ -11,8 +11,7 @@ import OrderPriceSummary from "./OrderPriceSummary";
 import { Alert } from "react-bootstrap";
 import { CardContext } from "../../App";
 import { totalQuantity } from "../../Utilis/GetTotalQuantity";
-import { useHistory } from "react-router";
-import axios from "axios";
+
 
 // import logo from "../../images/logo.png";
 
@@ -57,31 +56,6 @@ const OrderPoroductList = (props) => {
     rzp1.open();
   };
 
-  const [amount, setamount] = useState("");
-  const [receipt, setreceipt] = useState("");
-
-  const Registerdata = () => {
-    try {
-      let url =
-        "https://arcane-river-72249.herokuapp.com/api/payments/payment-order";
-      let temp = {
-        amount,
-        receipt,
-      };
-      axios.post(url, temp).then(
-        (res) => {
-          console.log("data response:::", res);
-        },
-        (error) => {
-          console.log("data response error:::", error);
-        }
-      );
-    } catch (error) {
-      console.log("data response error:::", error);
-    }
-  };
-
-  const history = useHistory();
   const [show, setShow] = useState(false);
   const cardproducts = JSON.parse(localStorage.getItem("cards")) || [];
   const [cardProductLength, setcardproductLength] = useContext(CardContext);
