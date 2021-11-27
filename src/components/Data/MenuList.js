@@ -12,7 +12,7 @@ export const menus = [
       { text: "Exterior", path: "/exterior-products" },
       { text: "Interior", path: "/interior-products" },
       { text: "Performance & Tunning", path: "/performance-and-tunning" },
-      { text: "Maintenance", path: "/" },
+      { text: "Maintenance", path: "/maintenance" },
     ],
   },
   {
