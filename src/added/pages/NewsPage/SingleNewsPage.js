@@ -19,7 +19,7 @@ const SingleNewsPage = ({ newsData }) => {
           <div className="col-lg-9">
             <div className="row">
               <div className="col-lg-4">
-                <img src={newsData[0].image} alt="image" />
+                <img src={newsData[0].image} alt="" />
               </div>
               <div className="col-lg-8">
                 <div className={"pt-5"}>

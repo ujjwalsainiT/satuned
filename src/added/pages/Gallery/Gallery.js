@@ -1,11 +1,9 @@
 import React from "react";
 import PageBanner from "../../../components/commonComponent/PageBanner/PageBanner";
-import { useHistory } from "react-router";
-import { Form } from "react-bootstrap";
 import './Gallery.css'
 
 const Gallery = () => {
-    const history = useHistory();
+   
     return(
         <div>
         <PageBanner title="Gallery" dontShowTitle={true} menu={true} />

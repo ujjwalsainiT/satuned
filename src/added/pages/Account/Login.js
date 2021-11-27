@@ -1,7 +1,6 @@
 import React from "react";
 import PageBanner from "../../../components/commonComponent/PageBanner/PageBanner";
 import "./Login.css";
-import { Form } from "react-bootstrap";
 import Forgotpass from "./Forgotpass";
 import LoginMainComponent from "./LoginMainComponent";
 import { useState } from "react";
@@ -49,7 +48,7 @@ const Login = () => {
               <b>I am a returning Customer</b>
             </h7>
             <br />
-            {check == 0 ? (
+            {check === 0 ? (
               <div>
                 <LoginMainComponent check={check} setCheck={setCheck} />
               </div>

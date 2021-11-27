@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageBanner from "../../../components/commonComponent/PageBanner/PageBanner";
 import { useHistory } from "react-router";
 import "./Register.css";

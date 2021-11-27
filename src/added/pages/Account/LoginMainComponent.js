@@ -1,12 +1,10 @@
 import React from "react";
-import Login from "./Login";
-import Forgotpass from "./Forgotpass";
 import { useHistory } from "react-router";
 import { Form } from "react-bootstrap";
 import "./Login.css";
 
 const LoginMainComponent = (props) => {
-  const { check, setCheck } = props;
+  const { setCheck } = props;
   const history = useHistory();
   return (
     <div onSubmit={() => alert("Signed in Successfully")}>

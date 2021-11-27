@@ -22,7 +22,6 @@ import Faq from "./added/pages/FaqPage/Faq.js";
 import Register from "./added/pages/Account/Register.js";
 import Login from "./added/pages/Account/Login.js";
 import Services from "./added/pages/Services/Services";
-import About from "./added/pages/AboutUS/About";
 import SingleNewsPage from "./added/pages/NewsPage/SingleNewsPage";
 import Gallery from "./added/pages/Gallery/Gallery.js";
 import Payment from "./pages/Payment/Payment";
@@ -94,9 +93,7 @@ function App() {
             <Route path="/services">
               <Services />
             </Route>
-            <Route path="/aboutus">
-              <About />
-            </Route>
+            
             <Route path="/gallery">
               <Gallery />
             </Route>

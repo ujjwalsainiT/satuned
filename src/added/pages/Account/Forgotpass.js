@@ -1,10 +1,8 @@
 import React from "react";
-import Login from "./Login";
-import { useHistory } from "react-router";
 import { Form } from "react-bootstrap";
 
 const Forgotpass = (props) => {
-  const { check, setCheck } = props;
+  const { setCheck } = props;
   return (
     <div>
       <br />
