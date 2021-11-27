@@ -40,6 +40,7 @@ import ExteriorProducts from "./components/productPageComponent/ProductPageLayou
 import PerformanceandTunning from "./components/productPageComponent/ProductPageLayout/PerformanceandTunning";
 import OrderHistory from "./components/MyAccount/OrderHistory";
 import ModifyAddress from "./components/MyAccount/ModifyAddress";
+import ReturnsorReplace from "./components/MyAccount/ReturnsorReplace";
 
 export const CardContext = createContext();
 
@@ -156,6 +157,10 @@ function App() {
 
             <Route path="/modify-address">
               <ModifyAddress />
+            </Route>
+
+            <Route path="/return">
+              <ReturnsorReplace />
             </Route>
 
             <Route path="/not-found">
