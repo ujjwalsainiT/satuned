@@ -23,19 +23,14 @@ const MyAccount = () => {
 
                     <div className="mt-4 mb-2 contact_us_heading ">My Orders</div>
                     <div><span className="edit_Links" onClick={() => history.push("/order-history")}>Order History</span></div>
-                    <div> <span className="edit_Links">download</span></div>
-                    <div><span className="edit_Links">Your Reward Point</span></div>
+                    {/* <div> <span className="edit_Links">download</span></div>
+                    <div><span className="edit_Links">Your Reward Point</span></div> */}
                     <div><span className="edit_Links" onClick={() => history.push("/return")}>Returns</span></div>
                     <div><span className="edit_Links">Transaction</span></div>
-                    {/* <div> <span className="edit_Links">Payment Pofile</span></div> */}
+                  
 
 
-                    {/* <div className="mt-4 mb-2 contact_us_heading ">My Affilate Account</div>
-                    <div><span className="edit_Links">Register for an Affilate Account</span></div>
-
-
-                    <div className="mt-4 mb-3 contact_us_heading ">News Letter</div>
-                    <div> <span className="edit_Links">News Letter</span></div> */}
+                 
 
                 </div>
             </div>

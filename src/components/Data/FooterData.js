@@ -40,7 +40,7 @@ export const rightFooterData = [
       title: "Customer Service",
       links: [
         { path: "/my-account", text: "My Account" },
-        { path: "/", text: "My Garage" },
+        { path: "/my-garage", text: "My Garage" },
         { path: "/order-tracking", text: "Track my order" },
         { path: "/get-service-quote", text: "Get a Quote" },
       ],

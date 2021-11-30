@@ -43,6 +43,7 @@ import ModifyAddress from "./components/MyAccount/ModifyAddress";
 import ReturnsorReplace from "./components/MyAccount/ReturnsorReplace";
 import Maintenance from "./components/productPageComponent/ProductPageLayout/Maintenance";
 import TrackMyOrder from "./components/TrackMyOrder/TrackMyOrder";
+import MyGarage from "./components/MyGarage/MyGarage";
 
 export const CardContext = createContext();
 
@@ -173,11 +174,15 @@ function App() {
               <TrackMyOrder />
             </Route>
 
+            <Route path="/my-garage" exact>
+              <MyGarage />
+            </Route>
+
             <Route path="/not-found" exact>
               <NotFind />
             </Route>
 
-            <Redirect from="*" to="/not-found"  exact/>
+            <Redirect from="*" to="/not-found" exact />
 
             <Footer />
           </Switch>
