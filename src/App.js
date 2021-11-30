@@ -42,6 +42,7 @@ import OrderHistory from "./components/MyAccount/OrderHistory";
 import ModifyAddress from "./components/MyAccount/ModifyAddress";
 import ReturnsorReplace from "./components/MyAccount/ReturnsorReplace";
 import Maintenance from "./components/productPageComponent/ProductPageLayout/Maintenance";
+import TrackMyOrder from "./components/TrackMyOrder/TrackMyOrder";
 
 export const CardContext = createContext();
 
@@ -77,102 +78,106 @@ function App() {
             <Route path="/news/:title" exact>
               <SingleNewsPage newsData={newsData} />
             </Route>
-            <Route path="/check-out">
+            <Route path="/check-out" exact>
               <CheckoutPage />
             </Route>
-            <Route path="/cart">
+            <Route path="/cart" exact>
               <CartPage />
             </Route>
-            <Route path="/pages/faq">
+            <Route path="/pages/faq" exact>
               <Faq />
             </Route>
-            <Route path="/account/register">
+            <Route path="/account/register" exact>
               <Register />
             </Route>
-            <Route path="/account/login">
+            <Route path="/account/login" exact>
               <Login />
             </Route>
-            <Route path="/services">
+            <Route path="/services" exact>
               <Services />
             </Route>
-            
-            <Route path="/gallery">
+
+            <Route path="/gallery" exact>
               <Gallery />
             </Route>
 
-            <Route path="/contact-us">
+            <Route path="/contact-us" exact>
               <ContactUs />
             </Route>
 
-            <Route path="/privacy-policy">
+            <Route path="/privacy-policy" exact>
               <PrivacyPolicy />
             </Route>
 
-            <Route path="/terms-and-conditions">
+            <Route path="/terms-and-conditions" exact>
               <Termsandconditions />
             </Route>
 
-            <Route path="/about-us">
+            <Route path="/about-us" exact>
               <AboutUs />
             </Route>
 
-            <Route path="/blogs">
+            <Route path="/blogs" exact>
               <Blogs />
             </Route>
 
-            <Route path="/blog-details">
+            <Route path="/blog-details" exact>
               <BlogsDetails />
             </Route>
 
-            <Route path="/my-account">
+            <Route path="/my-account" exact>
               <MyAccount />
             </Route>
 
-            <Route path="/edit-information">
+            <Route path="/edit-information" exact>
               <EditInformation />
             </Route>
 
-            <Route path="/change-password">
+            <Route path="/change-password" exact>
               <ChangePassword />
             </Route>
 
-            <Route path="/get-service-quote">
+            <Route path="/get-service-quote" exact>
               <GetService />
             </Route>
 
-            <Route path="/interior-products">
+            <Route path="/interior-products" exact>
               <InteriorProducts />
             </Route>
 
-            <Route path="/exterior-products">
+            <Route path="/exterior-products" exact>
               <ExteriorProducts />
             </Route>
 
-            <Route path="/performance-and-tunning">
+            <Route path="/performance-and-tunning" exact>
               <PerformanceandTunning />
             </Route>
 
-            <Route path="/order-history">
+            <Route path="/order-history" exact>
               <OrderHistory />
             </Route>
 
-            <Route path="/modify-address">
+            <Route path="/modify-address" exact>
               <ModifyAddress />
             </Route>
 
-            <Route path="/return">
+            <Route path="/return" exact>
               <ReturnsorReplace />
             </Route>
 
-            <Route path="/maintenance">
+            <Route path="/maintenance" exact>
               <Maintenance />
             </Route>
 
-            <Route path="/not-found">
+            <Route path="/order-tracking" exact>
+              <TrackMyOrder />
+            </Route>
+
+            <Route path="/not-found" exact>
               <NotFind />
             </Route>
 
-            <Redirect from="*" to="/not-found" />
+            <Redirect from="*" to="/not-found"  exact/>
 
             <Footer />
           </Switch>

@@ -41,7 +41,7 @@ export const rightFooterData = [
       links: [
         { path: "/my-account", text: "My Account" },
         { path: "/", text: "My Garage" },
-        { path: "/", text: "Track my order" },
+        { path: "/order-tracking", text: "Track my order" },
         { path: "/get-service-quote", text: "Get a Quote" },
       ],
     },
