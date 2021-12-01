@@ -26,11 +26,7 @@ const MyAccount = () => {
                     {/* <div> <span className="edit_Links">download</span></div>
                     <div><span className="edit_Links">Your Reward Point</span></div> */}
                     <div><span className="edit_Links" onClick={() => history.push("/return")}>Returns</span></div>
-                    <div><span className="edit_Links">Transaction</span></div>
-                  
-
-
-                 
+                    <div><span className="edit_Links" onClick={() => history.push("/transaction")}>Transaction</span></div>
 
                 </div>
             </div>

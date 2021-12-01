@@ -44,6 +44,7 @@ import ReturnsorReplace from "./components/MyAccount/ReturnsorReplace";
 import Maintenance from "./components/productPageComponent/ProductPageLayout/Maintenance";
 import TrackMyOrder from "./components/TrackMyOrder/TrackMyOrder";
 import MyGarage from "./components/MyGarage/MyGarage";
+import Transaction from "./components/MyAccount/Transaction";
 
 export const CardContext = createContext();
 
@@ -176,6 +177,10 @@ function App() {
 
             <Route path="/my-garage" exact>
               <MyGarage />
+            </Route>
+
+            <Route path="/transaction" exact>
+              <Transaction />
             </Route>
 
             <Route path="/not-found" exact>
