@@ -1,5 +1,4 @@
 import React from "react";
-import SectionTitle from "../../section-title/SectionTitle";
 import brandImage from "../../../images/brand.png";
 import style from "./BrandAndClient.module.css";
 
@@ -9,7 +8,7 @@ const BrandAndClient = () => {
   return (
     <div className="bg-main mt_-6">
       <div className="container">
-        <SectionTitle text="Search by Brands" star={"no"} />
+      <div className="text-uppercase m-0 font_oswald text-white  text-center home_Page_heading">Search by Brands</div>
         <div className="row" style={{ padding: "30px 0 70px" }}>
           {datas.map((data, index) => (
             <div

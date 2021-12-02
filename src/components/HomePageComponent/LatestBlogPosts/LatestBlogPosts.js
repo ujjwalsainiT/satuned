@@ -1,5 +1,4 @@
 import React from "react";
-import SectionTitle from "../../section-title/SectionTitle";
 import style from "./LatestBlogPost.module.css";
 import { BsPencilSquare } from "react-icons/bs";
 import { BlogData } from "./../../Data/LatestBlogData";
@@ -10,10 +9,8 @@ const LatestBlogPosts = () => {
   return (
     <div className={`${style.section} mt_-6`}>
       <div className="container">
-        <SectionTitle
-          text="LATEST BLOG POST"
-          description="Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum."
-        />
+    
+        <div className="text-uppercase m-0 font_oswald text-white pt-2 text-center home_Page_heading">LATEST BLOG POST</div>
         <div className={`row ${style.post_container}`}>
           {BlogData.length > 0 &&
             BlogData.slice(0, 2).map((data, index) => (
