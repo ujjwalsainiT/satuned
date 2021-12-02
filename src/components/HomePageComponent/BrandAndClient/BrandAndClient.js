@@ -8,7 +8,7 @@ const BrandAndClient = () => {
   return (
     <div className="bg-main mt_-6">
       <div className="container">
-      <div className="text-uppercase m-0 font_oswald text-white  text-center home_Page_heading">Search by Brands</div>
+      <div className="text-uppercase m-0 font_oswald text-white pt-3 text-center home_Page_heading">Search by Brands</div>
         <div className="row" style={{ padding: "30px 0 70px" }}>
           {datas.map((data, index) => (
             <div

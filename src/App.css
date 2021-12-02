@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Oswald:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Oswald:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"); */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
@@ -113,7 +113,7 @@
 }
 
 /* font family */
-.font_oswald {
+/* .font_oswald {
   font-family: Oswald, sans-serif;
 }
 .font_rubik {
@@ -124,7 +124,7 @@
 }
 .font-roboto {
   font-family: "Roboto", sans-serif;
-}
+} */
 .fw-500 {
   font-weight: 500;
 }
