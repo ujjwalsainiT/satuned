@@ -78,9 +78,7 @@ const InteriorProducts = () => {
                         </Card>
                     </div>
                     <div className="row p-2">
-                        <div className="Pagiantion_upper_border mb-4 p-3 ProductsTopHeading">
-                            Interior Products
-                        </div>
+                      
                         {(rowsPerPage > 0
                             ? ProductCardArr.slice(
                                 page * rowsPerPage,
