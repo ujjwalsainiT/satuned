@@ -3,7 +3,7 @@ import style from "./PageBanner.module.css";
 import { Breadcrumb } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
-import Menu from "../../MenuBar/Menu";
+import SecondMenu from "../../MenuBar/SecondMenu";
 
 const PageBanner = ({ title, menu, dontShowTitle }) => {
   const history = useHistory();
@@ -12,7 +12,7 @@ const PageBanner = ({ title, menu, dontShowTitle }) => {
       {menu && (
         
         <div className={style.product_page_menu_conatiner}>
-          <Menu bg={"white"} />
+          <SecondMenu bg={"white"} />
         </div>
       )}
       <div className="container">

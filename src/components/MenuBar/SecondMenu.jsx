@@ -4,12 +4,12 @@ import { MdSearch, MdMenu, MdClose } from "react-icons/md";
 import style from "./MenuBar.module.css";
 import { menus } from "./../Data/MenuList";
 import { Link } from "react-router-dom";
-import logo from "./../../images/Logo1.png";
+import logo from "./../../images/Logo.png";
 // import { CardContext } from "./../../App";
 import { SmallMenu } from "./SmallMenu";
 import { useHistory } from "react-router";
 
-const Menu = ({ bg }) => {
+const SecondMenu = ({ bg }) => {
   const history = useHistory();
   const [menuList] = useState(menus);
   const [showSearchBox, setShowSearchBox] = useState(false);
@@ -103,4 +103,4 @@ const Menu = ({ bg }) => {
   );
 };
 
-export default Menu;
+export default SecondMenu;
