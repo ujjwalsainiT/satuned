@@ -1,10 +1,12 @@
 import React from "react";
 import style from "./Slider.module.css";
 import { Form } from "react-bootstrap";
-
+import { useHistory } from "react-router";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const SliderDropDown = () => {
+  const history = useHistory();
+  
   return (
     <div>
       <div className={style.exhaust}>
@@ -34,6 +36,7 @@ const SliderDropDown = () => {
         <div>
           <MdKeyboardArrowRight
             className={`${style.arrow} text-white mt-3 mt-md-0`}
+            onClick={() => history.push("/products")}
           />
         </div>
       </div>

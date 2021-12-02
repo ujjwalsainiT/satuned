@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "./../../commonComponent/ProductCard/ProductCard";
+import ProductCard from "../../commonComponent/ProductCard/ProductCard";
 import "./ProductPageLayout.css";
 import axios from "axios";
 //pagination
@@ -37,36 +37,43 @@ const ProductPageLayout = () => {
           <Card className="Card_shadow p-3 mb-3">
             <div className="container">
               <div className="row">
-                <div className="col-md-3 col-6 d-flex">
+                <div className="col-md-1"></div>
+                <div className="col-md-2 col-6 mt-1">
                   <select class="form-control">
                     <option>Select Brand</option>
                     <option>No data</option>
                   </select>
                 </div>
-                <div className="col-md-3 col-6 d-flex ">
+                <div className="col-md-2 col-6 mt-1 ">
                   <select class="form-control">
                     <option>Select series</option>
                     <option>No data</option>
                   </select>
                 </div>
-                <div className="col-md-3 col-6 d-flex ">
+                <div className="col-md-2 col-6  mt-1">
                   <select class="form-control">
                     <option>Select Chassis</option>
                     <option>No data</option>
                   </select>
                 </div>
-                <div className="col-md-3 col-6 d-flex ">
+                <div className="col-md-2 col-6 mt-1 ">
                   <select class="form-control">
                     <option>Select Model</option>
                     <option>No data</option>
                   </select>
                 </div>
+                <div className="col-md-2 col-6 mt-1">
+                  <select class="form-control">
+                    <option>Select Quality</option>
+                    <option>No data</option>
+                  </select>
+                </div>
+                <div className="col-md-1 col-6"></div>
               </div>
             </div>
           </Card>
         </div>
         <div className="row p-2">
-          
           {(rowsPerPage > 0
             ? ProductCardArr.slice(
                 page * rowsPerPage,
