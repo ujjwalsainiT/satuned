@@ -1,9 +1,8 @@
 import {
   FaFacebookF,
-  FaTwitter,
-  FaGooglePlusG,
   FaLinkedin,
   FaInstagram,
+  FaYoutube,
 } from "react-icons/fa";
 
 // export const leftFooterData = [
@@ -84,19 +83,15 @@ export const contactData = [
     link: "facebook",
   },
   {
-    icon: FaTwitter,
-    link: "Twitter",
-  },
-  {
-    icon: FaGooglePlusG,
-    link: "Google",
-  },
-  {
     icon: FaLinkedin,
     link: "linkedin",
   },
   {
     icon: FaInstagram,
     link: "instagram",
+  },
+  {
+    icon: FaYoutube,
+    link: "youtube",
   },
 ];

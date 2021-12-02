@@ -28,7 +28,12 @@ const ContactUs = () => {
                                 </div>
                                 <div className="col-lg-7 mt-1">
                                     <strong>Telephone</strong>
-                                    <div>+91 97645 16224 / +91 744-8132412</div>
+                                    <div className="contact_data">
+                                        <span id="contact_no">+91 97645 16224 / +91 744-8132412</span>
+                                        <span id="contact_icon">
+                                            <i className="fa fa-phone ml-3" />
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

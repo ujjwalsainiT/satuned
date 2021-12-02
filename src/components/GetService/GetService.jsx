@@ -30,6 +30,21 @@ const GetService = () => {
                     </div>
 
                     <div class="mt-1">
+                        <label for="exampleInputEmail1">*Make</label>
+                        <input type="text" class="form-control" placeholder="Enter Make" />
+                    </div>
+
+                    <div class="mt-1">
+                        <label for="exampleInputEmail1">*Car Model</label>
+                        <input type="text" class="form-control" placeholder="Enter Car Model" />
+                    </div>
+
+                    <div class="mt-1">
+                        <label for="exampleInputEmail1">*Car Year</label>
+                        <input type="text" class="form-control" placeholder="Enter Car Year" />
+                    </div>
+
+                    <div class="mt-1">
                         <label for="exampleInputEmail1">*Enquriy</label>
                         <textarea class="form-control" rows="6" placeholder="Enter Your Message" />
                     </div>
