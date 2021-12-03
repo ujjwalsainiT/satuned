@@ -21,7 +21,7 @@ export const menus = [
     path: "/",
     dropdownList: [
       { text: "Project", path: "/blogs" },
-      { text: "Showcase", path: "/" },
+      { text: "Showcase", path: "/showcase" },
       { text: "Get a service quote", path: "/get-service-quote" },
     ],
   },

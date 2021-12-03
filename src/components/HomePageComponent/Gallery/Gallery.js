@@ -10,7 +10,7 @@ const Gallery = () => {
   return (
     <div className="bg-main mt_-6">
       <div className="container">
-        <h3 className="text-white text-center font_oswald text-uppercase mb-4 fw-normal">
+        <h3 className="text-white text-center font_oswald text-uppercase pt-3 mb-4 fw-normal">
           #we ON INSTAGRAM
         </h3>
       </div>

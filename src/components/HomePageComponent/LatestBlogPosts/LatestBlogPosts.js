@@ -10,7 +10,7 @@ const LatestBlogPosts = () => {
     <div className={`${style.section} mt_-6`}>
       <div className="container">
     
-        <div className="text-uppercase m-0 font_oswald text-white pt-2 text-center home_Page_heading">LATEST BLOG POST</div>
+        <div className="text-uppercase m-0 font_oswald text-white pt-2 mb-3 text-center home_Page_heading">LATEST BLOG POST</div>
         <div className={`row ${style.post_container}`}>
           {BlogData.length > 0 &&
             BlogData.slice(0, 2).map((data, index) => (

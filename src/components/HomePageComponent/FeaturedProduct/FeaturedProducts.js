@@ -12,7 +12,7 @@ const FearuredProducts = () => {
         }
       /> */}
       <div className="text-uppercase m-0 font_oswald text-white lp-2 text-center home_Page_heading">fetaured products</div>
-      <FeaturedProduct data={FeaturedProducts} />
+      {/* <FeaturedProduct data={FeaturedProducts} /> */}
       <FeaturedProduct data={FeaturedProducts} />
     </div>
   );

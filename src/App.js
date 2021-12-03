@@ -23,7 +23,6 @@ import Register from "./added/pages/Account/Register.js";
 import Login from "./added/pages/Account/Login.js";
 import Services from "./added/pages/Services/Services";
 import SingleNewsPage from "./added/pages/NewsPage/SingleNewsPage";
-import Gallery from "./added/pages/Gallery/Gallery.js";
 import Payment from "./pages/Payment/Payment";
 import ContactUs from "./components/ContactUs/ContactUs";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
@@ -45,6 +44,7 @@ import Maintenance from "./components/productPageComponent/ProductPageLayout/Mai
 import TrackMyOrder from "./components/TrackMyOrder/TrackMyOrder";
 import MyGarage from "./components/MyGarage/MyGarage";
 import Transaction from "./components/MyAccount/Transaction";
+import Showcase from "./components/HomePageComponent/Showcase/Showcase";
 
 export const CardContext = createContext();
 
@@ -71,7 +71,7 @@ function App() {
             <Route path="/products" exact>
               <ProductPage />
             </Route>
-            <Route path="/products/:id">
+            <Route path="/product-details">
               <ProductDetailsPage />
             </Route>
             <Route path="/news">
@@ -97,10 +97,6 @@ function App() {
             </Route>
             <Route path="/services" exact>
               <Services />
-            </Route>
-
-            <Route path="/gallery" exact>
-              <Gallery />
             </Route>
 
             <Route path="/contact-us" exact>
@@ -183,11 +179,15 @@ function App() {
               <Transaction />
             </Route>
 
-            <Route path="/not-found" exact>
-              <NotFind />
+            <Route path="/showcase" exact>
+              <Showcase />
             </Route>
 
-            <Redirect from="*" to="/not-found" exact />
+            {/* <Route path="/not-found" exact>
+              <NotFind />
+            </Route> */}
+
+            <Redirect to="/" />
 
             <Footer />
           </Switch>

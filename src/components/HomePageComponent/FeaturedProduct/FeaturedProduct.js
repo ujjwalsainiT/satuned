@@ -1,4 +1,4 @@
-import React, { useState, useContext , useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import style from "./featured-product.module.css";
 import { MdShoppingCart } from "react-icons/md";
 // import { FeaturedProducts } from "../../Data/FearuredProductData";
@@ -8,32 +8,32 @@ import { CardContext } from "./../../../App";
 import { totalQuantity } from "../../../Utilis/GetTotalQuantity";
 // import { animated } from "react-spring";
 // import { use3dEffect } from "use-3d-effect";
-import axios from 'axios'
+import axios from "axios";
+import { useHistory } from "react-router";
 
 // const btnList = ["ORIGINAL", "Chinese", "Used"];
 const FeaturedProduct = () => {
+  const history = useHistory();
+  const [productDataArr, setproductDataArr] = useState([]);
 
-  const [productDataArr, setproductDataArr] = useState([])
-
-  
   useEffect(() => {
-      axios.get('https://arcane-river-72249.herokuapp.com/api/product/list').then((res) => {
-        setproductDataArr(res.data.data)
-          // console.log("dataproduct:::",res);
-      })
+    axios
+      .get("https://arcane-river-72249.herokuapp.com/api/product/list")
+      .then((res) => {
+        setproductDataArr(res.data.data);
+        // console.log("dataproduct:::",res);
+      });
   });
 
-
-
   const [cardProductLength, setcardproductLength] = useContext(CardContext);
-  // const [selected, setSelected] = useState("ORIGINAL"); 
+  // const [selected, setSelected] = useState("ORIGINAL");
   // const ref = React.useRef(null);
   // const { style, ...mouseHandlers } = use3dEffect(ref);
 
   const handelAddToCard = (product) => {
     const cardproducts = JSON.parse(localStorage.getItem("cards")) || [];
     const findProduct = cardproducts.findIndex((pro) => pro.id === product.id);
-    console.log(cardProductLength)
+    console.log(cardProductLength);
 
     if (findProduct < 0) {
       product["quantity"] = 1;
@@ -56,7 +56,10 @@ const FeaturedProduct = () => {
       {productDataArr.length > 0 &&
         productDataArr.slice(0, 3).map((product, index) => (
           <div key={index} className="col-md-4 mb-5 mb-md-0 ">
-            <div className={`${style.featured__product__card} card`}>
+            <div
+              className={`${style.featured__product__card} card`}
+              onClick={() => history.push("/product-details")}
+            >
               <div className={style.card__image_wrapper}>
                 <img
                   className="card-img-top"
@@ -73,7 +76,7 @@ const FeaturedProduct = () => {
                   <h5
                     className={`card-title fs-13 font_rubik white700 font_oswald fw-500`}
                   >
-                   {product.description}
+                    {product.description}
                   </h5>
                   {/* <p className={`card-text white200 ${style.description}`}>
                     {product.description}
