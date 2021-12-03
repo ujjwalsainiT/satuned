@@ -191,6 +191,7 @@ function App() {
             {/* <Route path="/not-found" exact>
               <NotFind />
             </Route> */}
+            
 
             <Redirect to="/" />
 
