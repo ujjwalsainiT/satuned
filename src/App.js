@@ -45,6 +45,7 @@ import TrackMyOrder from "./components/TrackMyOrder/TrackMyOrder";
 import MyGarage from "./components/MyGarage/MyGarage";
 import Transaction from "./components/MyAccount/Transaction";
 import Showcase from "./components/HomePageComponent/Showcase/Showcase";
+import ProductDescription from "./components/ProductDetailsComponent/ProductDescription";
 
 export const CardContext = createContext();
 
@@ -181,6 +182,10 @@ function App() {
 
             <Route path="/showcase" exact>
               <Showcase />
+            </Route>
+
+            <Route path="/product-description" exact>
+              <ProductDescription />
             </Route>
 
             {/* <Route path="/not-found" exact>

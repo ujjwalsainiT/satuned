@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "./../../commonComponent/ProductCard/ProductCard";
+import TunningProductCard from "./../../commonComponent/ProductCard/TunningProductCard";
 import PageBanner from '../../../components/commonComponent/PageBanner/PageBanner';
 import "./ProductPageLayout.css";
 import axios from "axios";
@@ -78,9 +78,7 @@ const PerformanceandTunning = () => {
                         </Card>
                     </div>
                     <div className="row p-2">
-                        <div className="Pagiantion_upper_border mb-4 p-3 ProductsTopHeading">
-                            Prormance and Tunning
-                        </div>
+                      
                         {(rowsPerPage > 0
                             ? ProductCardArr.slice(
                                 page * rowsPerPage,
@@ -89,7 +87,7 @@ const PerformanceandTunning = () => {
                             : ProductCardArr
                         ).map((product, index) => (
                             <div key={index} className="col-md-4 col-6 d-flex mb-4">
-                                <ProductCard product={product} productPage={true} />
+                                <TunningProductCard product={product} productPage={true} />
                             </div>
                         ))}
                     </div>

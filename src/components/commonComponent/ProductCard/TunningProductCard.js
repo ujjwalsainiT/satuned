@@ -7,7 +7,7 @@ import { CardContext } from "./../../../App";
 // const btnList = ["ORIGINAL", "Chinese", "Used"];
 import { useHistory } from "react-router";
 
-const ProductCard = ({ product, productPage, dontShowDes }) => {
+const TunningProductCard = ({ product, productPage, dontShowDes }) => {
   const history = useHistory();
 
   const [hovered, sethovered] = useState(false);
@@ -38,7 +38,7 @@ const ProductCard = ({ product, productPage, dontShowDes }) => {
       className={`${
         productPage ? style.product_page_card : style.featured__product__card
       } card`}
-      onClick={() => history.push("/product-description")}
+      onClick={() => history.push("/product-details")}
     >
       <div className={style.card__image_wrapper}>
         <img
@@ -129,4 +129,4 @@ const ProductCard = ({ product, productPage, dontShowDes }) => {
   );
 };
 
-export default ProductCard;
+export default TunningProductCard;

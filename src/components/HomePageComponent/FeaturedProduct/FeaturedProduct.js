@@ -58,7 +58,7 @@ const FeaturedProduct = () => {
           <div key={index} className="col-md-4 mb-5 mb-md-0 ">
             <div
               className={`${style.featured__product__card} card`}
-              onClick={() => history.push("/product-details")}
+              onClick={() => history.push("/product-description")}
             >
               <div className={style.card__image_wrapper}>
                 <img

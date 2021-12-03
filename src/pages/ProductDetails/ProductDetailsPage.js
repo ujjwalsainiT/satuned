@@ -11,7 +11,7 @@ const ProductDetailsPage = () => {
     
     return (
         <div >
-           <PageBanner title="Sushila Autotechnik- SATuned" dontShowTitle={true}  menu={true}/>
+           <PageBanner title="Sushila Autotechnik- SATuned"   menu={true}/>
            <ProductSection />
            <AudioView />
            <ProductDetails />
