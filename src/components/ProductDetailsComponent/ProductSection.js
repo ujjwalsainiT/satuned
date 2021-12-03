@@ -1,22 +1,26 @@
-import React, {useContext} from "react";
+import React, { useContext, useEffect } from "react";
 import image from "./../../images/3.jpg";
 import ShowReview from "./../commonComponent/ShowReview/ShowReview";
 import { useState } from "react";
 import { productPageProductData } from "./../Data/ProductPageProductsData";
 import style from "./ProductDetails.module.css";
 import { MdFavorite } from "react-icons/md";
-import {  MdShoppingCart } from "react-icons/md";
+import { MdShoppingCart } from "react-icons/md";
 import { CardContext } from "../../App";
 import { totalQuantity } from "../../Utilis/GetTotalQuantity";
 
 // const btnList = ["ORIGINAL", "Chinese", "Used"];
 
 const ProductSection = () => {
-  // const [selected, setSelected] = useState("ORIGINAL"); 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // const [selected, setSelected] = useState("ORIGINAL");
   const [product] = useState(productPageProductData[0]);
 
-  const [ cardProductLength,setcardproductLength] = useContext(CardContext)
-  console.log(cardProductLength)
+  const [cardProductLength, setcardproductLength] = useContext(CardContext);
+  console.log(cardProductLength);
   const handelAddToCard = (product) => {
     const cardproducts = JSON.parse(localStorage.getItem("cards")) || [];
     const findProduct = cardproducts.findIndex((pro) => pro.id === product.id);
@@ -37,25 +41,27 @@ const ProductSection = () => {
     }
   };
 
-
   return (
     <div className="container py-5">
       <div className="row">
-        <div className={`${style.product_img} d-md-flex mb-4 mb-md-0 col-md-5 text-center`}>
+        <div
+          className={`${style.product_img} d-md-flex mb-4 mb-md-0 col-md-5 text-center`}
+        >
           <img src={image} alt="" className={`rounded-18 `} />
         </div>
         <div className="col-md-7 mt-2 mt-md-0">
           <div>
-            <h4 className={style.product_title}>
-             {product.productTitle}
-            </h4>
+            <h4 className={style.product_title}>{product.productTitle}</h4>
             <ShowReview product={product} />
             <p className={style.price}>RS. {product.price}</p>
             <p className={`${style.text} mb-0`}>
               Brand: <span className={"red"}>{product.brand}</span>
             </p>
             <p className={style.text}>
-              Availability:<span className={"red"}>{product.availability? " In Stock": " Sold"} </span>
+              Availability:
+              <span className={"red"}>
+                {product.availability ? " In Stock" : " Sold"}{" "}
+              </span>
             </p>
           </div>
           <p className={style.text}>
@@ -80,9 +86,11 @@ const ProductSection = () => {
                 </button>
               ))}
             </div> */}
-            <div className={` ${style.action_container} d-flex flex-wrap align-items-center`}>
+            <div
+              className={` ${style.action_container} d-flex flex-wrap align-items-center`}
+            >
               <div>
-                <label htmlFor="qutantity" className={`me-3 ${style.text}`}>
+                <label htmlFor="quantity" className={`me-3 ${style.text}`}>
                   Qty:
                 </label>
                 <input
@@ -90,12 +98,15 @@ const ProductSection = () => {
                   min="1"
                   defaultValue="1"
                   className={`me-3 ${style.input}`}
-                  id="qutantity"
+                  id="quantity"
                 />
               </div>
 
               <div className="me-3">
-                <button onClick = {() => handelAddToCard(product)} className={`${style.submit_btn} fs-14 btn `}>
+                <button
+                  onClick={() => handelAddToCard(product)}
+                  className={`${style.submit_btn} fs-14 btn `}
+                >
                   <MdShoppingCart className="me-2" /> <span>add to cart</span>
                 </button>
               </div>
